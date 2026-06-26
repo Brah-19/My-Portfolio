@@ -1,6 +1,6 @@
 "use client"
 
-import { Code2, Layout, Database, Terminal, Cpu, Globe } from "lucide-react"
+import { Brain, Code2, Layout, Database, Terminal, Cpu, Globe } from "lucide-react"
 
 const skillCategories = [
   {
@@ -11,6 +11,8 @@ const skillCategories = [
       { name: "Next.js", Icon: Globe },
       { name: "Tailwind CSS", Icon: Cpu },
       { name: "TypeScript", Icon: Terminal },
+      { name: "JavaScript", Icon: Code2 },
+      { name: "React Native", Icon: Layout },
     ],
   },
   {
@@ -21,6 +23,9 @@ const skillCategories = [
       { name: "GitHub", Icon: Globe },
       { name: "Postman", Icon: Terminal },
       { name: "VS Code", Icon: Code2 },
+      { name: "EXPO", Icon: Layout },
+      { name: "Vercel", Icon: Globe },
+      { name: "Swift Playgrounds", Icon: Terminal }
     ],
   },
   {
@@ -31,6 +36,22 @@ const skillCategories = [
       { name: "Node.js", Icon: Terminal },
       { name: "Supabase", Icon: Database },
       { name: "Sanity", Icon: Code2 },
+      { name: "MongoDB", Icon: Database },
+      { name: "Express.js", Icon: Terminal },
+      { name: "Prisma", Icon: Database },
+      { name: "PostgreSQL", Icon: Database },
+      { name: "MySQL", Icon: Database },
+      { name: "PHP", Icon: Terminal },
+    ],
+  },
+  {
+    title: "AI & Machine Learning",
+    icon: Brain,
+    skills: [
+      { name: "Artificial Intelligence", Icon: Brain },
+      { name: "Machine Learning", Icon: Cpu },
+      { name: "Python", Icon: Terminal },
+      { name: "Data Analysis", Icon: Database },
     ],
   },
 ]
@@ -42,7 +63,7 @@ export function SkillsSection() {
         <span className="w-8 h-px bg-primary/50" />
         I write;
       </h2>
-      <div className="grid md:grid-cols-3 gap-8">
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
         {skillCategories.map((category) => (
           <div key={category.title} className="space-y-4">
             <h3 className="text-sm font-bold text-muted-foreground uppercase tracking-widest flex items-center gap-2">

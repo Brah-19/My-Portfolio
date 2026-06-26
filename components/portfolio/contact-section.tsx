@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { Send, Mail, MapPin, Phone } from "lucide-react"
+import { Instagram, Linkedin, Mail, MapPin, MessageCircle, Twitter } from "lucide-react"
 
 export function ContactSection() {
   const [formState, setFormState] = useState({
@@ -34,6 +34,42 @@ export function ContactSection() {
             <a href="mailto:emmanuelopare763@gmail.com" className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors">
               <Mail size={18} />
               <span>emmanuelopare763@gmail.com</span>
+            </a>
+            <a
+              href="https://wa.me/233540319135"
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors"
+            >
+              <MessageCircle size={18} />
+              <span>+233 (0) 540 319 135</span>
+            </a>
+            <a
+              href="https://www.instagram.com/mr._immanuel?igsh=OHhjZ2RuNTF0bDkx&utm_source=qr"
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors"
+            >
+              <Instagram size={18} />
+              <span>Instagram</span>
+            </a>
+            <a
+              href="https://x.com/oparexoxo?s=11"
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors"
+            >
+              <Twitter size={18} />
+              <span>X</span>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/emmanuel-opare-717066285?"
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors"
+            >
+              <Linkedin size={18} />
+              <span>LinkedIn</span>
             </a>
             <div className="flex items-center gap-3 text-muted-foreground">
               <MapPin size={18} />

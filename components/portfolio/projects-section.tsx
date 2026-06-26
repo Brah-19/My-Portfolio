@@ -28,12 +28,12 @@ const projects = [
     live: "https://seabluerecipes.vercel.app/",
   },
   {
-    title: "Hadi Finance",
+    title: "Car Price Prediction Model",
     description:
-      "Optimized admin dashboard with data queuing from backend, reducing data retrieval time by 50% for managing 850+ informal retailers.",
-    tech: ["Next.js", "React", "Tailwind CSS", "TypeScript"],
+      "An AI-trained machine learning model that predicts car prices from engine size, mileage, year, brand, fuel type, and transmission.",
+    tech: ["Python", "Machine Learning", "Pandas", "Scikit-learn"],
     github: "https://github.com/Brah-19",
-    live: "https://hadi-finance.vercel.app/",
+    live: "https://github.com/Brah-19",
   },
 ]
 
